@@ -1,0 +1,13 @@
+model-viewer {
+  width: 500;
+  height: 400;
+  margin: auto;
+}
+.arBtn {
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

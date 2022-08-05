@@ -1,0 +1,55 @@
+.annotBtn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  box-sizing: border-box;
+  z-index: 5;
+  outline: 0px solid rgba(255, 255, 255, 0.3);
+  transition: outline 0.6s;
+}
+
+.annotBtn.active {
+  outline: 8px solid rgba(255, 255, 255, 0.3);
+}
+
+.annotLabel {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  max-width: 200px;
+  min-width: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transform: translateY(20px) translateX(1000vw);
+  transition: transform 0.6s;
+  z-index: 10;
+}
+
+.annotLabel::after {
+  content: " ";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.annotLabel.active {
+  transform: translateY(20px) translateX(0);
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  transform: rotateZ(45deg);
+  background-color: #fff;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
