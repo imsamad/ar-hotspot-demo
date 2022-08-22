@@ -40,7 +40,7 @@
   z-index: 10;
 }
 
-.annotLabel::after {
+/* .annotLabel::after {
   content: " ";
   position: absolute;
   top: 0%;
@@ -49,7 +49,7 @@
   border-width: 5px;
   border-style: solid;
   border-color: white transparent transparent transparent;
-}
+} */
 
 .annotLabel.active {
   transform: translateY(20px) translateX(0);

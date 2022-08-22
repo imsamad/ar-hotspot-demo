@@ -2,7 +2,6 @@ import { useImperativeHandle, forwardRef, useState } from "react";
 import { useAnnotations } from "../Ctx/AnnotationsProvider";
 
 import CKEEditorDialog from "../../../CKEEditorDialog2";
-import { Box } from "@mui/material";
 
 const getDataPosition = (annot) =>
   `${annot.position.x} ${annot.position.y} ${annot.position.z}`;
@@ -36,6 +35,7 @@ const AddAnnotaions = forwardRef((_props, addRef) => {
   }));
 
   const handleClick = (newAnnotCords) => {
+    console.log(`newAnnotCords`, newAnnotCords);
     if (!addHotspotFlag) return;
 
     const { annotCords, cameraTarget, cameraOrbit } = newAnnotCords;
